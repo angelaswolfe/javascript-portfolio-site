@@ -1,0 +1,26 @@
+[
+    {
+        "title": "TaskFlow Pro",
+        "description": "A collaborative productivity platform for teams, featuring real-time updates, Kanban boards, and analytics.",
+        "tech": ["React", "Node.js", "MongoDB", "Socket.io"],
+        "link": "https://github.com/alexandergshaw/taskflow-pro",
+        "projectUrl": "https://taskflowpro-demo.example.com",
+        "image": "https://placehold.co/320x180/4f8cff/fff?text=TaskFlow+Pro"
+    },
+    {
+        "title": "AI Portfolio Builder",
+        "description": "Automatically generates beautiful, responsive portfolios from your resume data using AI.",
+        "tech": ["Python", "Flask", "Bootstrap", "OpenAI API"],
+        "link": "https://github.com/alexandergshaw/ai-portfolio-builder",
+        "projectUrl": "https://aiportfoliobuilder-demo.example.com",
+        "image": "https://placehold.co/320x180/ffb347/fff?text=AI+Portfolio+Builder"
+    },
+    {
+        "title": "SmartHome Dashboard",
+        "description": "A unified dashboard for IoT devices, supporting real-time monitoring and automation.",
+        "tech": ["Vue.js", "Firebase", "Raspberry Pi"],
+        "link": "https://github.com/alexandergshaw/smarthome-dashboard",
+        "projectUrl": "https://smarthomedashboard-demo.example.com",
+        "image": "https://placehold.co/320x180/6ad69e/fff?text=SmartHome+Dashboard"
+    }
+]
