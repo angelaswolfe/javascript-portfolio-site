@@ -236,3 +236,29 @@ body {
     margin: 10px 0 0 0;
     padding: 0;
 }
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #181a1b !important;
+    color: #f1f1f1 !important;
+}
+body.dark-mode .navbar,
+body.dark-mode .section,
+body.dark-mode .projects-section,
+body.dark-mode .about-section {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+}
+body.dark-mode .project-card {
+    background: #222 !important;
+    color: #f1f1f1 !important;
+    border-color: #444 !important;
+}
+body.dark-mode .btn-primary {
+    background: #444 !important;
+    border-color: #666 !important;
+}
+body.dark-mode .btn-outline-secondary {
+    color: #f1f1f1 !important;
+    border-color: #888 !important;
+}

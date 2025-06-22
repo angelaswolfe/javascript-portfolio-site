@@ -1,18 +1,46 @@
 // Navbar scroll effect using variables and conditionals
 window.addEventListener('scroll', function () {
-    var navbar = document.querySelector('.navbar');
+    let navbar = document.querySelector('.navbar');
     if (navbar) {
         navbar.classList.toggle('navbar-scrolled', window.scrollY > 50);
+    }
+    // Show/hide scroll-to-top button
+    let scrollBtn = document.getElementById('scrollTopBtn');
+    if (scrollBtn) {
+        if (window.scrollY > 200) {
+            scrollBtn.style.display = 'block';
+        } else {
+            scrollBtn.style.display = 'none';
+        }
     }
 });
 
 // Dark Mode Toggle using function and constant
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
+    // Save preference
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 }
+// On page load, set theme from localStorage
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+}
+
 const darkModeBtn = document.getElementById('darkModeToggle');
 if (darkModeBtn) {
     darkModeBtn.addEventListener('click', toggleDarkMode);
+}
+
+// Scroll to top button functionality
+const scrollBtn = document.getElementById('scrollTopBtn');
+if (scrollBtn) {
+    scrollBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 }
 
 // Fetch and render projects using foundational JS concepts
