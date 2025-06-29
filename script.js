@@ -184,3 +184,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 });
+
+// Accessibility: Toggle dark mode with Ctrl+D or Cmd+D
+document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'd') {
+        e.preventDefault(); // Prevent browser bookmark shortcut
+        toggleDarkMode();
+    }
+});
