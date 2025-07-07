@@ -192,3 +192,30 @@ document.addEventListener('keydown', function (e) {
         toggleDarkMode();
     }
 });
+
+// Navigation Highlighting (Scrollspy)
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href^="#"]');
+    const sections = Array.from(document.querySelectorAll('section[id]'));
+
+    function onScroll() {
+        let scrollPos = window.scrollY + 100; // Offset for navbar height
+        let currentSectionId = '';
+        for (let section of sections) {
+            if (section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos) {
+                currentSectionId = section.id;
+                break;
+            }
+        }
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${currentSectionId}`) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // Run on load
+});

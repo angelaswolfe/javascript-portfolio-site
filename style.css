@@ -49,6 +49,13 @@ body {
     font-family: 'Inter', Arial, sans-serif;
 }
 
+.navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+    font-weight: 700;
+    border-bottom: 2px solid #0d6efd;
+    background: none;
+}
+
 .section {
     min-height: 100vh;
     display: flex;
